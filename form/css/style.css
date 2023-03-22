@@ -1,0 +1,208 @@
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  list-style-type: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* overflow: hidden; */
+  background: linear-gradient(#f2be5c, #FF8C00);
+  ;
+}
+
+::selection {
+  color: #fff;
+  background: black;
+}
+
+.container {
+  width: 330px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 1em;
+  padding: 3em 2em 0.7em 2em;
+}
+
+.container header {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 1.5em;
+}
+
+.container .formulario {
+  width: 100%;
+  overflow: hidden;
+}
+
+.container .formulario form {
+  display: flex;
+  width: 400%;
+}
+
+.formulario form .pagina {
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.formulario form .pagina .titulo {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.formulario form .pagina .campo {
+  width: 330px;
+  height: 45px;
+  margin: 2.5em 0;
+  display: flex;
+  position: relative;
+}
+
+form .pagina .campo .label {
+  position: absolute;
+  top: -1.5em;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+form .pagina .campo input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 0.5em;
+  padding-left: 0.5em;
+  font-size: 1.2em;
+}
+
+form .pagina .campo select {
+  width: 100%;
+  padding-left: 0.8em;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+form .pagina .campo button {
+  width: 100%;
+  border: none;
+  background: #f2be5c;
+  margin-top: -1em;
+  border-radius: 0.8em;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+
+form .pagina .campo button:hover {
+  background: #000;
+}
+
+form .pagina .botoes button {
+  margin-top: -20px !important;
+}
+
+form .pagina .botoes button.voltar {
+  margin-right: 0.2em;
+  font-size: 1.1em;
+}
+
+form .pagina .botoes button.proximo {
+  margin-left: 3px;
+}
+
+.container .progresso {
+  display: flex;
+  margin: 3em 0;
+  user-select: none;
+}
+
+.container .progresso .etapa {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.container .progresso .etapa p {
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #000;
+  margin-bottom: 0.5em;
+}
+
+.progresso .etapa .etapa{
+  height: 25px;
+  width: 25px;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.progresso .etapa .etapa.ativo{
+  border-color: #FF8C00;
+  background-color: #f2be5c;
+}
+
+.progresso .etapa .etapa span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.progresso .etapa .etapa.active span{
+  display: none;
+}
+
+.progresso .etapa .etapa:before, .progresso .etapa .etapa:after{
+  position: absolute;
+  content: '';
+  bottom: 0.8em;
+  right: -4.6em;
+  height: 0.2em;
+  width: 4.2em;
+  background: #262626;
+}
+
+.progresso .etapa .etapa.active:after {
+  background: #FF8C00;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+
+.progresso .etapa:last-child .etapa:before, .progresso .etapa:last-child .etapa:after{
+  display: none;
+}
+
+.progresso .etapa p.ativo{
+  color: #FF8C00;
+  transition: 0.2s linear;
+}
+
+.progresso .tapa span.ativo{
+  font-weight: 600;
+  color: #201e1e;
+  transition: 0.2s linear;
+}
+

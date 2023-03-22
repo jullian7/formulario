@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORM</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <header>Formulário de Inscrição</header>
+
+    <div class="progresso">
+      <div class="etapa">
+        <p>Nome</p>
+        <div class="etapa">
+          <span>1</span>
+        </div>
+      </div>
+
+      <div class="etapa">
+        <p>Endereço</p>
+        <div class="etapa">
+          <span>2</span>
+        </div>
+      </div>
+
+      <div class="etapa">
+        <p>Contato</p>
+        <div class="etapa">
+          <span>3</span>
+        </div>
+      </div>
+    </div>
+    <div class="formulario">
+      <form action="#" id="form">
+        <div class="pagina">
+          <div class="titulo">
+            <h4>Informações básicas</h4>
+          </div>
+          <div class="campo">
+            <div class="label">
+              <label for="nome">Primeiro nome</label>
+            </div>
+            <input type="text" name="nome" id="primeiroNome">
+          </div>
+          <div class="campo">
+            <div class="label">
+              <label for="nome">Sobrenome</label>
+            </div>
+            <input type="text" name="sobrenome" id="sobrenome">
+          </div>
+          <div class="campo">
+            <div class="label">
+              <label for="nome">CPF</label>
+            </div>
+            <input type="text" name="sobrenome" id="cpf">
+          </div>
+          <div class="campo">
+            <button class="proximo" onclick="validarCPF()">Próximo</button>
+          </div>
+        </div>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
